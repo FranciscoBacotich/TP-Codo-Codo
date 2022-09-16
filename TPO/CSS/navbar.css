@@ -1,0 +1,58 @@
+/* Traje unas fonts de google para que quede mejor en los botones de la nav bar */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500');
+
+
+li, a, button{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    font-size: 14px;
+    color: #ecf0f1;
+    text-decoration: none;
+}
+
+header{
+    display: flex;
+    justify-content: space-between ;
+    align-items: center;
+    padding: 30px 15%;
+    
+}
+
+.logo {
+    cursor: pointer;
+    max-width: 50px;
+    max-height: 50px;
+}
+
+.nav_links {
+    list-style: none;
+}
+
+.nav_links li{
+    display: inline-block;  /*asi en lugar de ir para arriba estan lado a lado, prueben sacando y poniendo cosas siquieren para ver que hace */
+    padding: 0px 20px ;
+}
+
+.nav_links li a {
+    transition: all 0,3s ease 0s;     /*transcicion para los links*/
+}
+
+.nav_links li a:hover { 
+    color: #0088a9;
+}
+
+button{
+    padding: 5px 10px;
+    background-color: rgba(109, 107, 107,0.8);
+    border: none;
+    border-radius: 7px;
+    cursor: pointer;
+    transition: all 0,3s ease 0s;
+}
+
+button:hover{
+    background-color: rgba(95, 192, 127, 0.8);
+} 
+
+
+
