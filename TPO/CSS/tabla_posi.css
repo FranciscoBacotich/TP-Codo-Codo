@@ -1,0 +1,47 @@
+section > h1,p{
+    font-family:sans-serif;
+    width:400px;
+    margin:35px auto;
+    text-align:center;
+    color:lightgreen;
+}
+
+table{
+    width:720px;
+    margin:0 auto;
+    color:rgb(0, 0, 0);
+    text-align:center;
+}
+
+tr{
+    cursor:pointer;
+}
+  
+.destacado{
+    font-family:Arial;
+    font-weight:bold;
+    background-color:#0D6859;
+}
+  
+  
+  /* Impares */
+table tr:nth-child(odd){
+    background-color:#A0C55E;
+}
+  
+table tr:nth-child(odd):hover{
+    color:black;
+    background-color:#00aa00;
+}
+  /* Pares */
+table tr:nth-child(even){
+    background-color:#7AB318;
+}
+  
+table tr:nth-child(even):hover{
+    color:black;
+    background-color:#007700;
+}
+
+
+

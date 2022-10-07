@@ -2,77 +2,83 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
+}
+
+body{
+    display:grid;
+    gap: 10px;
+    /* Color de fondo */
+    background-color:#0F3E76;
+    padding: 10px;
+
+    grid-template-areas: 
+    'header header header header'
+    'img   img     img    img'
+    'asid   main   main    main'
+    'asid   main   main    main'
+    'sect   main   main    main'
+    'footer footer footer  footer'
+    ;
+    grid-template-rows :0.25fr 1fr 1fr 1fr ;
+    grid-template-columns :1fr 1fr 1fr 1fr ;
+    
+}
+
+body > header,aside,footer,main,article,div,section{
+    /* Color de los containers, esto despues lo sacamos cuando tengamos el color de la pagina.O lo hacemos muy translucido. */
+    background-color: rgb(108, 130, 164);
+    padding: 10px;
+    color: white;
+    text-align: center;
+}
+
+.grid-header{
+    grid-area: header;
+    width: 100%;
+
+}
+
+.home-img{
+    grid-area: img;
+    width: 100%;
+    height: auto;
+}
+
+body > main{
+    grid-area: main;
+}
+
+body > aside{
+    grid-area: asid;
+}
+
+footer{
+    grid-area: footer;
+}
+
+.tabla-posi{
+    grid-area: sect;
+}
+
+
+@media screen and (max-width: 768px){
+    body{
+        grid-template-areas: 
+            'header header header header'
+            'img    img     img    img'
+            'main   main   main    main'
+            'main   main   main    main'
+            'sect   asid   asid    asid'
+            'footer footer footer  footer'
+            ;
+    }
+
+    .nav-links{
+        justify-content: center;
+    }
+}
+
+/* Esto es solo para guiarme con los colores */
+h1,p,h3{
     background-color: #1f6a6a;
 }
-
-
-/* Hay cosas aca que son temporales, es para poder ver la forma de los contenedores nada mas */
-body,header,main,footer{
-    border:3px red solid;
-    min-height: 50px;
-    margin: 0.5rem;
-    min-width: 500px;
-}
-
-main{
-    min-height: 200px;
-}
-
-main>div {
-    border: 2px rgb(31, 247, 31) solid;
-    min-height: 180px;
-    margin: 0.5rem; 
-}
-
-main>aside {
-    min-height: 180px;
-    border:2px rgb(187, 73, 187) solid;
-    margin: 0.5rem;
-}
-
-/* Esto es porque queria especificamente ver los contenedores de la tabla y prox evento */
-main>div>section>div{
-    border: 2px white solid;
-    margin: 0.5rem;
-    padding: 20px;
-    max-width: 200px;
-}
-
-.backg-home-imgs{    
-    border: 2px white solid;
-    min-height: auto;
-}
-
-#home-imgs-menu{
-    border: 3px blue solid;
-    min-height: 150px;
-    margin: 3px;
-}
-
-#img-home{
-    max-width:25%;
-    max-height:25%;
-}
-
-
-.prox-event-est{
-    border: 3px red solid;
-    min-height: 100px;
-    margin: 3px;
-}
-
-
-.quote-banner{
-    min-height: 100px;
-    border: red solid;
-    margin: 3px;
-}
-
-
-
-.ufc-hist{
-    min-height: 50px;
-    border: white solid;
-    margin: 3px;
-}
-

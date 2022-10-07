@@ -10,31 +10,18 @@ li, a, button{
     text-decoration: none;
 }
 
-header{
+.nav_links {
     display: flex;
+    padding: 30px;
     justify-content: space-between ;
     align-items: center;
-    padding: 30px 15%;
-    
-}
-
-.logo {
-    cursor: pointer;
-    max-width: 50px;
-    max-height: 50px;
-}
-
-.nav_links {
+    flex-wrap: wrap;
     list-style: none;
+    gap: 5px;
 }
 
 .nav_links li{
-    display: inline-block;  /*asi en lugar de ir para arriba estan lado a lado, prueben sacando y poniendo cosas siquieren para ver que hace */
-    padding: 0px 20px ;
-}
-
-.nav_links li a {
-    transition: all 0,3s ease 0s;     /*transcicion para los links*/
+    display: inline-block;  /*asi en lugar de ir para arriba estan lado a lado, prueben sacando y poniendo cosas siquieren para ver que hace*/
 }
 
 .nav_links li a:hover { 
@@ -47,12 +34,18 @@ button{
     border: none;
     border-radius: 7px;
     cursor: pointer;
-    transition: all 0,3s ease 0s;
 }
 
 button:hover{
     background-color: rgba(95, 192, 127, 0.8);
+    transition-property: all;
+    transition-duration: 0.2s;
+    transition-timing-function: ease-in;
 } 
 
-
+.logo {
+    cursor: pointer;
+    max-width: 50px;
+    max-height: 50px;
+} 
 

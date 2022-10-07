@@ -6,87 +6,155 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>C.A.C</title>
     <!-- links css -->
-    <link rel="stylesheet" href="CSS/navbar.css">
     <link rel="stylesheet" href="CSS/style.css">
+    <link rel="stylesheet" href="CSS/navbar.css">
+    <link rel="stylesheet" href="CSS/tabla_posi.css">
+    
 </head>
 
 <body>
-    <header>
+    <!-- Esta clase del header es solo para ubicarlo en grid -->
+    <header class="grid-header">
+        
         <!-- Aca empieza la navbar        -->
         <nav>
             <ul class="nav_links">
                 <!-- Por ahora estos vuelven a la pagina principal, pero la idea capaz seria que al hacer click te lleve a la seccion de la pagina principal -->
-                <li><a href="index.html"><button>Calendario</button></a></li>
-                <li><a href="index.html"><button>Posiciones</button></a></li>
-                <li><a href="index.html"><button>Historia</button></a></li>
-            </ul>
-        </nav>
-        <a href="index.html"><img class="logo" src="Imageness/football-logo-background_1195-244.webp" alt="logo"></a>
-        <nav>
-            <ul class="nav_links">
-                <!-- Aca serian nuestras otras paginas: habria que armar los html para estas -->
+                <li><a href="index.html"><img class="logo" src="Imageness/football-logo-background_1195-244.webp" alt=""></a></li>
+                <li><a href="index.html"><button>Liga</button></a></li>
+                <li><a href="index.html"><button>Redes Sociales</button></a></li>
                 <li><a href="videoteca.html"><button>Videoteca</button></a></li>
                 <li><a href="nosotros.html"><button>Nosotros</button></a></li>
-                <li><a href="redessociales.html"><button>Redes Sociales</button></a></li>
             </ul>
-        </nav>
-        <!-- Aca termina la navbar -->
+        </nav>             
     </header>
 
 
-    <main>
-        <!-- En section podemos poner dos imagenes como de presentacion con alguna frase con animacion adelante, o quiza es mejor ponerlo en el header? Y quiza no hace falta usar section directamente el div. -->
-        <section class="backg-home-imgs">
-            <div id="home-imgs-menu">
-                <img id="img-home" src="Imageness/futsal prueba 1.jpg" alt=""><img id="img-home" src="Imageness/futsal-infantil.jpg" alt=""> 
-                <p>Aca tienen que estar paralelas las dos imagenes.Usar flex o grid.</p>
-            </div>
-        </section>
-        
-        <!-- En este div: section irian los proximos partidos y los resultados de los anteriores; y en article la tabla de posiciones-->
-        <div> 
-            <section class="prox-event-est">
-                <div>
-                    <h3>PROXIMO EVENTO</h3>
-                    <p>Pirulos vs Juanitos</p>
-                </div>
-                <div>
-                    <h3>TABLA DE POSICIONES</h3>
-                    <ul>
-                        <li>1</li>
-                        <li>2</li>
-                        <li>3</li>
-                        <li>4</li>
-                        <li>5</li>
-                        <li>6</li>
-                    </ul>
-                </div>
-                <img src="" alt="">
-            </section>
-
-            <article class="quote-banner">
-                <img src="" alt="">
-                <div>
-                    <h3>
-                        Presentacion de imagenes con notas sobre el partido.
-                    </h3>
-                </div>
-            </article>       
-        </div>  
-
-        <!-- Habria que ver ejemplos para pensar que poner aca -->
-        <aside>
-            <div><p><b>Aca va el aside que estaria al costado de proximo evento y presentacion de imagenes.Podemos poner lo que sea en este aside.</b></p></div>
-            <div></div>
-        </aside>    
-
+    <div class="home-img"><img src="Imageness/futsal-infantil.jpg" alt=""></div>
+    
+    
+    
+    <main>  
+        <p>MAIN: dos contenedores adentro</p>      
     </main>
     
-    <!-- En footer podriamos poner los links para ir a las diferentes paginas, como para guiarse, la mayoria de los sitios lo tienen.Con info de contacto abajo tmb. -->
-    <footer class="ufc-hist">
-        <div><p><b>Contaco,Ubicacion, Menu,Videoteca,etc.</b></p></div>
 
 
+    <aside>
+        <h1>REVOLUCION EN EL FUTSAL</h1>
+        <h3>Mas que un deporte</h3>
+        <p><br> Lipsum dolor sit amet consectetur adipisicing elit.
+            Ipsam, reprehenderit nihil. Labore exercitationem, doloribus nesciunt pariatur, expedita praesentium non, 
+            incidunt porro eius eveniet sunt vitae voluptate assumenda. Ab, obcaecati quia.</p>
+
+        <p><br> Lipsum dolor sit amet consectetur adipisicing elit.
+            Ipsam, reprehenderit nihil. Labore exercitationem, doloribus nesciunt pariatur, expedita praesentium non, 
+            incidunt porro eius eveniet sunt vitae voluptate assumenda. Ab, obcaecati quia.</p>
+        
+        <p><br> Lipsum dolor sit amet consectetur adipisicing elit.
+            Ipsam, reprehenderit nihil. Labore exercitationem, doloribus nesciunt pariatur, expedita praesentium non, 
+            incidunt porro eius eveniet sunt vitae voluptate assumenda. Ab, obcaecati quia.</p>
+
+        <p><br> Lipsum dolor sit amet consectetur adipisicing elit.
+            Ipsam, reprehenderit nihil. Labore exercitationem, doloribus nesciunt pariatur, expedita praesentium non, 
+            incidunt porro eius eveniet sunt vitae voluptate assumenda. Ab, obcaecati quia.</p>
+    </aside>
+
+
+
+
+
+    <section>
+        <table cellspacing="0" cellpadding="0">
+            <tr class="destacado">
+            <td>POSICIONES</td>
+            <td>EQUIPO</td>
+            <td>PG</td>
+            <td>PP</td>
+            <td>PE</td>
+            <td>GF</td>
+            <td>GC</td>
+            <td>POS</td>
+            </tr>
+            <tr>
+            <td>
+                <img src="https://icons.iconarchive.com/icons/giannis-zographos/spanish-football-club/32/Atletico-Madrid-icon.png" alt="" />
+            </td>
+            <td>
+                Atlético de Madrid
+            </td>
+            <td>20</td>
+            <td>7</td>
+            <td>3</td>
+            <td>21</td>
+            <td>12</td>
+            <td>1</td>
+            </tr>
+            <tr>
+            <td>
+            <img src="https://icons.iconarchive.com/icons/giannis-zographos/spanish-football-club/32/Spain-1-icon.png" alt="" />
+            </td>
+            <td>Deportivo Español</td>
+            <td>15</td>
+            <td>10</td>
+            <td>5</td>
+            <td>16</td>
+            <td>6</td>
+            <td>2</td>
+            </tr>
+            <tr>
+            <td>
+                <img src="https://icons.iconarchive.com/icons/giannis-zographos/spanish-football-club/32/Valencia-icon.png" alt="" />
+            </td>
+            <td>Valencia</td>
+            <td>12</td>
+            <td>8</td>
+            <td>4</td>
+            <td>24</td>
+            <td>9</td>
+            <td>3</td>
+            </tr>
+            <tr>
+            <td>
+                <img src="https://icons.iconarchive.com/icons/giannis-zographos/spanish-football-club/32/FC-Barcelona-icon.png" alt="">
+            </td>
+            <td>Barcelona</td>
+            <td>11</td>
+            <td>2</td>
+            <td>3</td>
+            <td>23</td>
+            <td>10</td>
+            <td>4</td>
+            </tr>
+            <tr>
+            <td>
+                <img src="https://icons.iconarchive.com/icons/giannis-zographos/spanish-football-club/32/Real-Madrid-icon.png" alt="">
+            </td>
+            <td>Real Madrid</td>
+            <td>10</td>
+            <td>2</td>
+            <td>6</td>
+            <td>33</td>
+            <td>11</td>
+            <td>5</td>
+            </tr>
+            <tr>
+            <td>
+                <img src="https://icons.iconarchive.com/icons/giannis-zographos/spanish-football-club/32/Getafe-icon.png" alt="">
+            </td>
+            <td>Getafe</td>
+            <td>12</td>
+            <td>7</td>
+            <td>6</td>
+            <td>12</td>
+            <td>10</td>
+            <td>6</td>
+            </tr>
+        </table>
+    </section>
+
+    <footer> 
+        <P>FOOTER</P>     
     </footer>
 
 
