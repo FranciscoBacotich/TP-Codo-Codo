@@ -1,4 +1,4 @@
-section > h1,p{
+.table-styl > h1{
     font-family:sans-serif;
     width:400px;
     margin:35px auto;
@@ -8,7 +8,7 @@ section > h1,p{
 
 table{
     width:720px;
-    margin:0 auto;
+    margin:0;
     color:rgb(0, 0, 0);
     text-align:center;
 }
