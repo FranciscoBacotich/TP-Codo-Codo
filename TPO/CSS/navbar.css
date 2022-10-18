@@ -1,12 +1,13 @@
 /* Google font */
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500');
 
-li, a, button{
+li, a{
     font-family: 'Montserrat', sans-serif;
     font-weight: 500;
-    font-size: 14px;
+    font-size: 25px;
     color: #ecf0f1;
     text-decoration: none;
+    
 }
 
 .nav_links {
@@ -23,11 +24,11 @@ li, a, button{
 .nav_links li{
     display: inline-block; /*asi en lugar de ir para arriba estan lado a lado, prueben sacando y poniendo cosas siquieren para ver que hace*/
     border-radius: 5px;
-    box-shadow: 1px 1px 4px 3px rgba(163, 162, 162, 0.23);  
+    text-shadow: 0 0 10px rgba(255, 255, 255, 0.564);  
 }
 
 .nav_links li a:hover { 
-    color: #0088a9;
+    color: lightgreen;
 }
 
 button{
