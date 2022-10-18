@@ -1,16 +1,9 @@
-.table-styl > h1{
-    font-family:sans-serif;
-    width:400px;
-    margin:35px auto;
-    text-align:center;
-    color:lightgreen;
-}
-
 table{
-    width:720px;
-    margin:0;
+    width:690px;
+    margin:10px;
     color:rgb(0, 0, 0);
     text-align:center;
+    box-shadow: 1px 1px 4px 3px rgba(2, 2, 2, 0.585);
 }
 
 tr{

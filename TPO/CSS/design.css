@@ -27,6 +27,8 @@ body > aside > h1, h2, h3{
 .imgs-asid{
     width: 800px;
     height: auto;
+    border-radius: 2px;
+    box-shadow: 1px 1px 4px 3px rgba(167, 166, 166, 0.208);
 }
 
 main{
@@ -37,6 +39,10 @@ main> div > h1,h2,h3{
     color: white;
     margin:35px;
     text-transform: uppercase;
+    text-align: center;
+}
+
+.text-table{
     text-align: center;
 }
 

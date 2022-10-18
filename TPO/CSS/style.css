@@ -24,14 +24,48 @@ body{
 
 }
 
+.container-home-img{
+  grid-area: img;
+  width: 100%;
+  height: auto;
+  overflow: hidden;
+  margin: 0px;
+  border-radius: 5px;
+  box-shadow: 1px 1px 4px 3px rgba(163, 162, 162, 0.593);
+}
+
+
 .home-img{
     padding: 0px;
-    grid-area: img;
     width: 100%;
     height: auto;
     object-fit: cover;
     opacity: 0.6;
 }
+
+
+.container-home-img > p{
+  margin: 0px;
+  font-size: 5rem;
+  color: white;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-shadow: 0 0 10px rgba(0, 0, 0, 0.8);
+  animation: fade-inout 4s;
+}
+
+/*Animacion texto de home.   Tengo que ponerle un punto de corte al texto P para que quede dentro del container*/
+@keyframes fade-inout{
+  0%{opacity: 0;}
+  100%{opacity: 1;}
+}
+
+
+/* ////////////////////////////////////////////////////////////////////*/
+
+
 
 body > main{
     grid-area: main;
@@ -183,99 +217,4 @@ footer{
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* footer{
-        border-top: solid 1px #dbe3e5;
-        font-size: 15px;
-        line-height: 1.7em;
-        color: #58595b;
-        padding: 10px 0 0;
-}
-
-.foot-container{
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-start;
-
-}
-
-.top-left-foot{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    flex: 60%;
-    
-}
-.top-right-foot{
-    flex: 40%;
-}
-
-.footer .foot-container {
-    max-width: 1740px;
-    padding: 0 20px;
-    }
-
-.index .footer {
-    margin-top: 0;
-    padding-top: 0; }
-  
-.footer p {
-    margin-bottom: 10px; }
-  
-.footer a {
-    color: #008c50;
-    font-size: 14px; }
-  
-.footer a:hover {
-    color: #1a474b; }
-  
-
-.footer .footer_top {
-    padding-top: 0;
-}
-
-.foot-list{
-    list-style: none;
-}
-
-.contact-foot{
-    display: flex;
-    justify-content: space-evenly;
-} */
 
