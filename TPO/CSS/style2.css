@@ -29,14 +29,18 @@ body > main{
 
 body > aside{
     grid-area: asid;
+    padding: 5px;
+    margin: 5px;
 }
 
 footer{
     grid-area: footer;
 }
 
-.tabla-posi{
+body > section{
     grid-area: sect;
+    padding: 5px;
+    margin: 5px;
 }
 
 
@@ -45,13 +49,12 @@ footer{
 main{
     display: flex;
     flex-direction: column;
-    justify-content: flex-end;
     align-items: flex-end;
-    row-gap: 20px;
+    row-gap: 30px;
 }
 
 .promociones-tienda{
-    width: 500px;
+    width: 100%;
     text-align: center;
 }
 
@@ -70,5 +73,34 @@ main{
 }
 
 
+.container-asid{
+    grid-area: asid;
+    width: 700px;
+    height: auto;
+    margin: 0px;
+    border-radius: 5px;
+    box-shadow: 1px 1px 3px 3px rgba(58, 56, 56, 0.742);
+}
 
+.container-sect{
+    grid-area: sect;
+    width: 700px;
+    height: auto;
+    margin: 0px;
+    border-radius: 5px;
+    box-shadow: 1px 1px 3px 3px rgba(58, 56, 56, 0.742);
+}
 
+.flyier1-asid{
+    padding: 0px;
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    opacity: 0.9;
+}
+
+.banner-info{
+    margin: 250px 15px 15px 15px;
+    padding: 15px 5px 15px 5px;
+    text-align: center;
+}

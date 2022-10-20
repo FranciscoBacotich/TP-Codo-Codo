@@ -39,6 +39,11 @@ main{
     color: lightgreen;
 }
 
+main span h1{
+    color: white;
+    margin-top: 25px;
+}
+
 main> div > h1,h2,h3{
     color: white;
     margin:35px;

@@ -1,13 +1,12 @@
 :root {
     --font: 'Oxygen', sans-serif;
     --primary: #984538bf;
-    --gradient: linear-gradient(135deg, #FAD7A1 0%, #926de9 100%);
     --black: black;
   }
   
   body {
     font-family: var(--font);
-    background: var(--gradient);
+    background-color:#070617 ;
     margin: 0;
   }
   .u-wrapper {
@@ -164,9 +163,10 @@
 
   .tag span {
     padding: .5em;
-    background: var(--black);
+    background: white;
     color: var(--primary);
-    box-shadow: -4px 4px 0 white;
+    /* box-shadow: -4px 4px 0 white; */
+    border-radius: 5px;
   }
   
   .project-copy {
@@ -221,8 +221,9 @@
   }
   
   .form label span {
-    color: #DA1414;
+    color: #ec5e5e;
   }
+
   
   .form input, .form textarea {
     box-sizing: border-box;
@@ -254,6 +255,8 @@
     opacity: 0;
   }
   
+
+  /**************************************************/
   @media screen and (min-width: 768px) {
     .hero-content {
       display: grid;
