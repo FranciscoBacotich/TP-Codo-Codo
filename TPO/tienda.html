@@ -4,54 +4,109 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>StingBeesMMA</title>
-    <!-- El style hay que separarlo con lo que queremos que sea para todas las paginas y lo que queremos que sea solo para el home -->
-    <link rel="stylesheet" href="CSS/style3.css">
-    <link rel="stylesheet" href="CSS/navbar.css">
+    <title>Futbol Pequeños Campeones</title>
+
+    <!-- Links Css -->
     <link rel="stylesheet" href="CSS/footer.css">
+    <link rel="stylesheet" href="CSS/style2.css">
+    <link rel="stylesheet" href="CSS/navbar.css">
     <link rel="stylesheet" href="CSS/design.css">
-    <link rel="stylesheet" href="CSS/form1.css">
+
+    <!--Addons-->
+    <link rel="icon" type="image/x-icon" href="Imageness/logo nuevo.png">
 
 </head>
 
 <body>
-   <!-- Esta clase del header es solo para ubicarlo en grid -->
-   <header class="grid-header">
+    <!-- Esta clase del header es solo para ubicarlo en grid -->
+    <header class="grid-header">
         
-    <!-- Aca empieza la navbar        -->
-    <nav>
-        <ul class="nav_links">
-            <!-- Por ahora estos vuelven a la pagina principal, pero la idea capaz seria que al hacer click te lleve a la seccion de la pagina principal -->
-            <li><a href="index.html"><img class="logo" src="Imageness/logo nuevo.png" alt=""></a></li>
-            <li><a href="index.html">LIGA</a></li>
-            <li><a href="videoteca.html">VIDEOTECA</a></li>
-            <li><a href="tienda.html">TIENDA</a></li>
-            <li><a href="nosotros.html">NOSOTROS</a></li>
-        </ul>
-    </nav>             
+        <!-- Aca empieza la navbar        -->
+        <nav>
+            <ul class="nav_links">
+                <!-- Por ahora estos vuelven a la pagina principal, pero la idea capaz seria que al hacer click te lleve a la seccion de la pagina principal -->
+                <li><a href="index.html"><img class="logo" src="Imageness/logo nuevo.png" alt=""></a></li>
+                <li><a href="index.html">LIGA</a></li>
+                <li><a href="videoteca.html">VIDEOTECA</a></li>
+                <li><a href="tienda.html">TIENDA</a></li>
+                <li><a href="nosotros.html">NOSOTROS</a></li>
+            </ul>
+        </nav>             
     </header>
 
-    <section class="contact">
-        <div class="u-wrapper">
-          <div class="contact-content">
-    
-            <form id="form" action="" class="form">
-              <h3 class="tag"><span>ESCRIBINOS</span></h3>
-              <label for="name">Nombre Completo <span>*</span></label>
-              <input name="name" required type="text" id="name" placeholder="Juan">
-              <label for="email">Correo electrónico <span>*</span></label>
-              <input name="email" type="text" id="email" required placeholder="juan@gmail.com.ar">
-              <label for="message">Mensaje</label>
-              <textarea id="message" name="message" id="" cols="30" rows="10"></textarea>
-              <button type="submit" class="btn primary full">enviar mensaje</button>
-            </form>
-            <a href="mailto:me@leonidasesteban.com" id="trucazo"></a>
-          </div>
+    <main>
+        <div class="promociones-tienda">
+            <h1>PROMOCIONES</h1>
+            <ul class="tienda_text">
+                <li>Remeras = $500</li>
+                <li>Camisetas = $800</li>
+                <li>Shorts = $400</li>
+                <li>Medias = $250</li>
+                <li>Canilleras = $500</li>
+                <li>Botines = $5000</li>
+            </ul>
         </div>
-      </section>
+
+        <div class="promociones-tienda">
+            <h1>DESCUENTOS</h1>
+            <ul class="tienda_text">
+                <li>Remeras = $500</li>
+                <li>Camisetas = $800</li>
+                <li>Shorts = $400</li>
+                <li>Medias = $250</li>
+                <li>Canilleras = $500</li>
+                <li>Botines = $5000</li>
+            </ul>
+        </div>
+
+        <div class="promociones-tienda">
+            <h1>DESCUENTOS</h1>
+            <ul class="tienda_text">
+                <li>Remeras = $500</li>
+                <li>Camisetas = $800</li>
+                <li>Shorts = $400</li>
+                <li>Medias = $250</li>
+                <li>Canilleras = $500</li>
+                <li>Botines = $5000</li>
+            </ul>
+        </div>
 
 
-      <!-- ACA EMPIEZA EL FOOTER -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </main>
+    <aside>
+
+
+
+
+    </aside>
+
+    <section>
+
+    </section>
+
+
+
+
     <footer> 
         <div class="footer">
             <div class="contain">
@@ -121,23 +176,10 @@
             </div>
           <div class="clearfix"></div>
           </div>
-        </div>
+          </div>
+
+
     </footer>
 
-      <script>
-        const $form = document.querySelector('#form')
-        const $buttonMailto = document.querySelector('#trucazo')
-    
-        $form.addEventListener('submit', handleSubmit)
-    
-        function handleSubmit(event) {
-          event.preventDefault()
-          const form = new FormData(this)
-          $buttonMailto.setAttribute('href', `mailto:nanisao@hotmail.com.com?subject=nombre ${form.get('name')}  correo ${form.get('email')}&body=${form.get('message')}`)
-          $buttonMailto.click()
-        }
-      </script>
-    
-  
 </body>  
 </html>

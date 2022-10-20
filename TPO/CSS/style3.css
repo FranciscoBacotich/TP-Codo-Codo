@@ -1,0 +1,53 @@
+body{
+    display:grid;
+    gap: 10px;
+    /* Color de fondo */
+    background-color:#070617;
+    padding: 1px;
+
+    grid-template-areas: 
+    'header header header header'
+    'main   main   main    main'
+    'main   main   main    main'
+    'sect   sect   asid   asid'
+    'footer footer footer  footer'
+    ;
+    /* grid-template-rows :0.25fr 1fr 1fr 1fr ; */
+    grid-template-columns :1fr 1fr 1fr 1fr ;
+    
+}
+
+.grid-header{
+    grid-area: header;
+    width: 100%;
+
+}
+
+body > main{
+    grid-area: main;
+}
+
+body > aside{
+    grid-area: asid;
+}
+
+footer{
+    grid-area: footer;
+}
+
+.tabla-posi{
+    grid-area: sect;
+}
+
+
+/*************************************************/
+
+main{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    row-gap: 20px;
+}
+
+

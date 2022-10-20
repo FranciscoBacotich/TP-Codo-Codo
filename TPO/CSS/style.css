@@ -31,7 +31,7 @@ body{
   overflow: hidden;
   margin: 0px;
   border-radius: 5px;
-  box-shadow: 1px 1px 4px 3px rgba(163, 162, 162, 0.593);
+  box-shadow: 1px 1px 4px 3px rgba(163, 162, 162, 0.493);
 }
 
 
@@ -41,7 +41,6 @@ body{
     height: auto;
     object-fit: cover;
     opacity: 0.6;
-    font-size: 20px;
 }
 
 
@@ -85,6 +84,38 @@ footer{
     grid-area: sect;
 }
 
+
+
+.iframe-class{
+  padding: 0px 70px 70px 70px;
+}
+
+
+/* Responsive para el Iframe(Objetivo= 720px Punto de corte final, pero que en 500px se entienda */
+
+@media screen and (max-width: 700px){
+  .iframe-class{
+      padding-left: 50px;
+  }
+}
+
+
+@media screen and (max-width: 600px){
+  .iframe-class{
+      padding-left: 25px;
+
+  }
+}
+
+@media screen and (max-width: 500px){
+
+.iframe-class{
+  padding: 0px;
+  }
+}
+
+
+
 /*////////////////////////ESTABLECER 3 PUNTOS DE CORTE/////////////////////*/
 @media screen and (max-width: 900px){
   body{
@@ -102,16 +133,6 @@ footer{
   .nav-links{
       justify-content: center;
   }
-
-  @media screen and (max-width: 800px){
-  .container-home-img > p{
-    font-size: 2em;
-    position: absolute;
-    top: 35%;
-    left: 50%;
-  }
-}
-  
 
 }
 
@@ -132,7 +153,7 @@ footer{
   }
 }
 
-@media screen and (max-width: 1100px){
+@media screen and (max-width: 1200px){
   .container-home-img > p{
     font-size: 3em;
     position: absolute;
@@ -141,9 +162,18 @@ footer{
   }
 }
 
+@media screen and (max-width: 950px){
+  .container-home-img > p{
+    font-size: 2.5em;
+    position: absolute;
+    top: 38%;
+    left: 50%;
+  }
+}
+
 @media screen and (max-width: 800px){
   .container-home-img > p{
-    font-size: 2em;
+    font-size: 1.5em;
     position: absolute;
     top: 35%;
     left: 50%;
@@ -152,107 +182,6 @@ footer{
 }
 
 
-
-/*/////////////////////// FOOTER //////////////////////*/
-.footer {
-    width: 100%;
-    position: relative;
-    height: auto;
-    background-color: #0f0e22;
-  }
-  .footer .col {
-    width: 190px;
-    height: auto;
-    float: left;
-    box-sizing: border-box;
-    -webkit-box-sizing: border-box;
-    -moz-box-sizing: border-box;
-    padding: 0px 20px 20px 20px;
-  }
-  .footer .col h1 {
-    margin: 0;
-    padding: 0;
-    font-family: inherit;
-    font-size: 12px;
-    line-height: 17px;
-    padding: 20px 0px 5px 0px;
-    color: rgba(255,255,255,0.2);
-    font-weight: normal;
-    text-transform: uppercase;
-    letter-spacing: 0.250em;
-  }
-  .footer .col ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-  }
-  .footer .col ul li {
-    color: #999999;
-    font-size: 14px;
-    font-family: inherit;
-    font-weight: bold;
-    padding: 5px 0px 5px 0px;
-    cursor: pointer;
-    transition: .2s;
-    -webkit-transition: .2s;
-    -moz-transition: .2s;
-  }
-  .social ul li {
-    display: inline-block;
-    padding-right: 5px !important;
-  }
-  
-  .footer .col ul li:hover {
-    color: #ffffff;
-    transition: .1s;
-    -webkit-transition: .1s;
-    -moz-transition: .1s;
-  }
-  .clearfix {
-    clear: both;
-  }
-  @media only screen and (min-width: 1280px) {
-    .contain {
-      width: 1200px;
-      margin: 0 auto;
-    }
-  }
-  @media only screen and (max-width: 1139px) {
-    .contain .social {
-      width: 1000px;
-      display: block;
-    }
-    .social h1 {
-      margin: 0px;
-    }
-  }
-  @media only screen and (max-width: 950px) {
-    .footer .col {
-      width: 33%;
-    }
-    .footer .col h1 {
-      font-size: 14px;
-    }
-    .footer .col ul li {
-      font-size: 13px;
-    }
-  }
-  @media only screen and (max-width: 500px) {
-      .footer .col {
-        width: 50%;
-      }
-      .footer .col h1 {
-        font-size: 14px;
-      }
-      .footer .col ul li {
-        font-size: 13px;
-      }
-  }
-  @media only screen and (max-width: 340px) {
-    .footer .col {
-      width: 100%;
-    }
-  }
 
 
 

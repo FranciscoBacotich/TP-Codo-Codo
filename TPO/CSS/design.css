@@ -17,10 +17,8 @@ body > aside > h3{
     text-decoration-line: underline;
 }
 
-.ul-home{
-    list-style: none;
-    text-align: left;
-    width: 100%;
+.aside-styl> h1{
+    margin: 40px auto;
 }
 
 .aside-styl> h1,p{
@@ -28,6 +26,7 @@ body > aside > h3{
     margin:35px auto;
     text-align: center;
 }
+
 
 .imgs-asid{
     width: 800px;
@@ -51,33 +50,3 @@ main> div > h1,h2,h3{
     text-align: center;
 }
 
-.iframe-class{
-    padding: 70px;
-}
-
-/* Responsive para el Iframe(Objetivo= 720px Punto de corte final, pero que en 500px se entienda */
-
-@media screen and (max-width: 700px){
-    .iframe-class{
-        padding-left: 50px;
-    }
-
-}
-
-
-@media screen and (max-width: 600px){
-    .iframe-class{
-        padding-left: 25px;
-
-    }
-
-}
-
-@media screen and (max-width: 500px){
-
-.iframe-class{
-    padding: 0px;
-    }
-
-}
-  
