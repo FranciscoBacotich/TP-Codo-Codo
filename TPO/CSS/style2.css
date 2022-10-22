@@ -104,3 +104,52 @@ main{
     padding: 15px 5px 15px 5px;
     text-align: center;
 }
+
+
+/*********************************************************/
+
+@media screen and (max-width: 1000px){
+    body{
+        grid-template-areas: 
+        'header header header header'
+        'asid   asid   asid   asid'
+        'main   main   main    main'
+        'sect   sect   sect    sect'
+        'footer footer footer  footer'
+        ;
+    }
+  
+    .nav-links{
+        justify-content: center;
+    }
+
+    
+  }
+  
+  
+  @media screen and (max-width: 700px){
+    body{
+        font-size: 0.9em;
+    }
+    .container-sect{
+        width: 560px;
+        
+    }
+    .container-asid{
+        width: 560px;
+    }
+
+  }
+  
+  @media screen and (max-width: 500px){
+    body > main{
+        font-size: 0.9em;
+    }
+    .container-sect{
+        width: 460px;
+    }
+    .container-asid{
+        width: 460px;
+    }
+
+  }
