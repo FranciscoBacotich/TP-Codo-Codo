@@ -111,12 +111,18 @@ footer{
   }
 }
 
+@media screen and (max-width: 872px){
+  .container-home-img > p{
+    top: 46%;
+    left: 50%;
+  }
+}
+
 
 @media screen and (max-width: 700px){
   .container-home-img > p{
-    font-size: 1.5em;
-    position: absolute;
-    top: 31%;
+    font-size: 2em;
+    top: 44%;
     left: 50%;
   }
 }
@@ -124,8 +130,7 @@ footer{
 @media screen and (max-width: 500px){
   .container-home-img > p{
     font-size: 1.5em;
-    position: absolute;
-    top: 29%;
+    top: 40%;
     left: 50%;
   }
 
