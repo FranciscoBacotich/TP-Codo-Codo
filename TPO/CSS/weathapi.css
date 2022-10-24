@@ -6,7 +6,7 @@
 }
 
 body {
-    /*background-color: #F46036;*/
+    /* background-color: #F46036; */
     background-color: #171123;
     height: 100vh;
     display: flex;
@@ -19,7 +19,6 @@ body {
     background-color: #171123;
     padding: 20px;
     display: none;
-
 }
 
 #container > .block {

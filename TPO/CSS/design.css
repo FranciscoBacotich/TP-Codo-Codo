@@ -55,3 +55,33 @@ main> div > h1,h2,h3{
     text-align: center;
 }
 
+/************************************/
+
+@media screen and (max-width: 1000px){
+    .imgs-asid{
+        width: 990px;
+        height: auto;
+    }
+  }
+  
+  @media screen and (max-width: 872px){
+    .imgs-asid{
+        width: 850px;
+        height: auto;
+    }
+  }
+  
+  
+  @media screen and (max-width: 700px){
+    .imgs-asid{
+        width: 690px;
+        height: auto;
+    }
+  }
+
+@media screen and (max-width: 500px){
+    .imgs-asid{
+        width: 490px;
+        height: auto;
+    }
+  }
