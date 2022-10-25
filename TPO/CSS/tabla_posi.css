@@ -36,5 +36,19 @@ table tr:nth-child(even):hover{
     background-color:#007700;
 }
 
+  
+  
+  @media screen and (max-width: 650px){
+   table{
+        width: 621px;
+        font-size: 0.8em;
+    }
+  }
 
+@media screen and (max-width: 500px){
+    table{
+        width: 471px;
+        font-size: 0.7em;
+    }
+  }
 

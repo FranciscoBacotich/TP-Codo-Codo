@@ -136,6 +136,11 @@ footer{
 
   .iframe-class{
     padding: 0px;
+  
+  }
+
+  iframe{
+    width: 485px;
   }
 
   .tabla-posi{
